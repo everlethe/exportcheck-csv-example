@@ -1,0 +1,73 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>ExportCheck · FAIL</title><style>
+*{box-sizing:border-box}body{font:16px/1.6 system-ui,sans-serif;margin:0;background:#f5f4ef;color:#162f31}main{max-width:1120px;margin:auto;padding:48px 28px}.eyebrow{letter-spacing:.16em;font-size:12px;font-weight:700;color:#517276}h1{font-size:48px;line-height:1.15;margin:16px 0}.verdict{display:inline-block;background:#f5d8cb;padding:8px 20px;border-radius:40px;font-weight:700}.stats{display:flex;flex-wrap:wrap;gap:16px;margin:32px 0}.stat{background:white;border:1px solid #d7dfda;padding:20px;min-width:145px;flex:1}.stat b{font-size:30px;display:block}.stat span{font-size:12px;text-transform:uppercase}section{background:white;border:1px solid #d7dfda;padding:24px;margin:20px 0;overflow:auto}h2{font-size:20px}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;border-bottom:1px solid #ddd;padding:12px;vertical-align:top;overflow-wrap:anywhere;max-width:340px}pre{font-size:12px;white-space:pre-wrap;overflow-wrap:anywhere}.muted{color:#597174}.banner{background:#f5e2a8;padding:12px 20px}a{color:#126466}@media(max-width:640px){main{padding:24px 16px}h1{font-size:34px}}
+</style><main><div class="eyebrow">EXPORTCHECK / ACCEPTANCE REPORT</div>
+<p class="banner">SYNTHETIC DEMO — invented records for product testing; not customer or revenue data.</p>
+<h1>Know what changed.<br>Keep the evidence.</h1><span class="verdict">FAIL</span>
+<p class="muted">Offline CSV verification · rules and file fingerprints included · v0.1.0</p>
+<div class="stats"><div class="stat"><b>1</b><span>added</span></div><div class="stat"><b>0</b><span>removed</span></div><div class="stat"><b>1</b><span>changed</span></div><div class="stat"><b>2</b><span>unchanged</span></div><div class="stat"><b>0</b><span>ambiguous keys</span></div><div class="stat"><b>0</b><span>empty keys</span></div></div><section><h2>Changed cells</h2><table><thead><tr><th>Key</th><th>Column</th><th>Before</th><th>After</th></tr></thead><tbody><tr><td>[&quot;SAMPLE-002&quot;, &quot;1&quot;]</td><td>state</td><td>pending</td><td>paid</td></tr></tbody></table>
+<p class="muted">HTML shows the first 500 changed records. JSON and CSV contain the full comparison.</p></section>
+<section><h2>Added, removed and ambiguous records</h2><pre>{
+  &quot;added&quot;: [
+    {
+      &quot;key&quot;: [
+        &quot;SAMPLE-003&quot;,
+        &quot;1&quot;
+      ],
+      &quot;row&quot;: {
+        &quot;order_id&quot;: &quot;SAMPLE-003&quot;,
+        &quot;line&quot;: &quot;1&quot;,
+        &quot;sku&quot;: &quot;DEMO-D&quot;,
+        &quot;amount&quot;: &quot;12.00&quot;,
+        &quot;state&quot;: &quot;paid&quot;
+      }
+    }
+  ],
+  &quot;removed&quot;: [],
+  &quot;ambiguous&quot;: []
+}</pre><p>First 100 of each shown; use JSON for all records.</p></section>
+<section><h2>Schema and missing keys</h2><pre>{
+  &quot;schema&quot;: {
+    &quot;added&quot;: [],
+    &quot;removed&quot;: []
+  },
+  &quot;empty_key_records&quot;: {
+    &quot;left&quot;: [],
+    &quot;right&quot;: []
+  }
+}</pre></section>
+<section><h2>Reproduce this check</h2><p>Local comparison under the displayed rules. Not a certified audit. Reports may contain sensitive input data.</p><pre>{
+  &quot;inputs&quot;: [
+    {
+      &quot;name&quot;: &quot;before.csv&quot;,
+      &quot;sha256&quot;: &quot;946732c6d1d1b93818059c698b17883766871eba27d4ce18b8ce5261e5b0013c&quot;,
+      &quot;delimiter&quot;: &quot;,&quot;,
+      &quot;records&quot;: 3
+    },
+    {
+      &quot;name&quot;: &quot;after.csv&quot;,
+      &quot;sha256&quot;: &quot;0402b3da1694db83b75699e80443f66380cd8b16481e0265ccffb64237636691&quot;,
+      &quot;delimiter&quot;: &quot;,&quot;,
+      &quot;records&quot;: 4
+    }
+  ],
+  &quot;profile&quot;: {
+    &quot;version&quot;: 1,
+    &quot;ignore_columns&quot;: [],
+    &quot;trim_values&quot;: false,
+    &quot;trim_keys&quot;: false,
+    &quot;ignore_case&quot;: false,
+    &quot;numeric_tolerance&quot;: {
+      &quot;amount&quot;: &quot;0.01&quot;
+    },
+    &quot;max_added&quot;: 0,
+    &quot;max_removed&quot;: 0,
+    &quot;max_changed&quot;: 0,
+    &quot;delimiter&quot;: null,
+    &quot;keys&quot;: [
+      &quot;order_id&quot;,
+      &quot;line&quot;
+    ]
+  }
+}</pre></section></main></html>

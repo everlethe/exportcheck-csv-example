@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "keys": ["order_id", "line"],
+  "numeric_tolerance": {"amount": "0.01"},
+  "ignore_columns": [],
+  "max_added": 0,
+  "max_removed": 0,
+  "max_changed": 0
+}

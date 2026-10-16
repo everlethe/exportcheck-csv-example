@@ -1,0 +1,5 @@
+order_id,line,sku,amount,state
+SAMPLE-002,1,DEMO-C,25.00,paid
+SAMPLE-001,2,DEMO-B,9.505,paid
+SAMPLE-001,1,DEMO-A,19.00,paid
+SAMPLE-003,1,DEMO-D,12.00,paid

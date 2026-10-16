@@ -1,0 +1,7 @@
+﻿status,key_json,column,before,after
+changed,"[""SAMPLE-002"", ""1""]",state,pending,paid
+added,"[""SAMPLE-003"", ""1""]",order_id,,SAMPLE-003
+added,"[""SAMPLE-003"", ""1""]",line,,1
+added,"[""SAMPLE-003"", ""1""]",sku,,DEMO-D
+added,"[""SAMPLE-003"", ""1""]",amount,,12.00
+added,"[""SAMPLE-003"", ""1""]",state,,paid

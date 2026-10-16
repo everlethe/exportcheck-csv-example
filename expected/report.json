@@ -1,0 +1,85 @@
+{
+  "tool": "ExportCheck",
+  "version": "0.1.0",
+  "verdict": "FAIL",
+  "inputs": [
+    {
+      "name": "before.csv",
+      "sha256": "946732c6d1d1b93818059c698b17883766871eba27d4ce18b8ce5261e5b0013c",
+      "delimiter": ",",
+      "records": 3
+    },
+    {
+      "name": "after.csv",
+      "sha256": "0402b3da1694db83b75699e80443f66380cd8b16481e0265ccffb64237636691",
+      "delimiter": ",",
+      "records": 4
+    }
+  ],
+  "profile": {
+    "version": 1,
+    "ignore_columns": [],
+    "trim_values": false,
+    "trim_keys": false,
+    "ignore_case": false,
+    "numeric_tolerance": {
+      "amount": "0.01"
+    },
+    "max_added": 0,
+    "max_removed": 0,
+    "max_changed": 0,
+    "delimiter": null,
+    "keys": [
+      "order_id",
+      "line"
+    ]
+  },
+  "counts": {
+    "added": 1,
+    "removed": 0,
+    "changed": 1,
+    "unchanged": 2,
+    "ambiguous_keys": 0,
+    "empty_keys": 0
+  },
+  "schema": {
+    "added": [],
+    "removed": []
+  },
+  "ambiguous": [],
+  "empty_key_records": {
+    "left": [],
+    "right": []
+  },
+  "added": [
+    {
+      "key": [
+        "SAMPLE-003",
+        "1"
+      ],
+      "row": {
+        "order_id": "SAMPLE-003",
+        "line": "1",
+        "sku": "DEMO-D",
+        "amount": "12.00",
+        "state": "paid"
+      }
+    }
+  ],
+  "removed": [],
+  "changed": [
+    {
+      "key": [
+        "SAMPLE-002",
+        "1"
+      ],
+      "changes": {
+        "state": {
+          "before": "pending",
+          "after": "paid"
+        }
+      }
+    }
+  ],
+  "notice": "Local comparison under the displayed rules. Not a certified audit. Reports may contain sensitive input data."
+}
