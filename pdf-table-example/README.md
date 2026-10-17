@@ -39,3 +39,5 @@ Published by the maker of **[SourceToSheet](https://inu-gumi.pro/exportcheck/sit
 Use the [Upwork offer](https://www.upwork.com/services/product/admin-customer-support-text-pdf-tables-converted-to-excel-with-source-page-references-2094924043265415041) to discuss uncertain layouts before ordering. Keep orders, messages, files and payments on Upwork. Do not post private documents or customer data in a public issue.
 
 For another task, see the [CSV comparison](../README.md) or [supplier-column mapping](../mapping-example/README.md) examples.
+
+For a general question about text PDFs, table layouts or source references, [ask a public workflow question](https://github.com/everlethe/exportcheck-csv-example/issues/new?template=workflow-question.md). Describe the layout without uploading your PDF. Existing Upwork orders stay in their Upwork conversation.

@@ -54,3 +54,5 @@ Published by the maker of CatalogOps Import Prep and CatalogBridge:
 - **[CatalogBridge](https://inu-gumi.pro/exportcheck/site/catalogbridge)** is separate desktop software for mapping CSV/Excel columns yourself, **$49 one-time**, plus applicable tax. See its page for supported platforms, limits and download details. This sample was produced by the Import Prep service tool; it is not a demonstration of the CatalogBridge interface.
 
 For a before/after acceptance check rather than column mapping, see the [keyed CSV comparison example](../README.md). Use the [support page](https://inu-gumi.pro/exportcheck/site/support) for product questions. Do not post customer data, private files or credentials in a public repository.
+
+Unsure whether you need a mapping service or a desktop tool? [Ask a public workflow question](https://github.com/everlethe/exportcheck-csv-example/issues/new?template=workflow-question.md) using only a general description or invented example. Existing Upwork orders stay in their Upwork conversation.

@@ -14,6 +14,12 @@ Two CSV exports can look different because rows moved, numbers were rounded, or 
 
 Each example includes the input, explicit rules and expected output. You can inspect them without buying or installing an application.
 
+## Ask whether your workflow fits
+
+[Ask a public workflow question](https://github.com/everlethe/exportcheck-csv-example/issues/new?template=workflow-question.md) if you are unsure which example or product fits. Describe the file type, approximate size and result you need; use invented values for any example. Questions may be answered by the owner's AI assistant.
+
+Issues are public. Do not attach real files, customer information, credentials or payment references. For an existing Upwork order, continue in its Upwork conversation. Use [private product support](https://inu-gumi.pro/exportcheck/site/support) for account, purchase or delivery questions. A public discussion is not an order or a promise to accept work.
+
 ## Try the example
 
 1. Open [`fixtures/before.csv`](fixtures/before.csv) and [`fixtures/after.csv`](fixtures/after.csv).
