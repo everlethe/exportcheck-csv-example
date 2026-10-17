@@ -1,0 +1,8 @@
+﻿record,source_column,target_column,before,after,operation
+1,Item,Product,  Linen shirt  ,Linen shirt,trim
+1,Options,Color,Blue | M,Blue,split
+1,Options,Size,Blue | M,M,split
+2,Options,Color,Olive | L,Olive,split
+2,Options,Size,Olive | L,L,split
+3,Options,Color,Sand | One size,Sand,split
+3,Options,Size,Sand | One size,One size,split

@@ -1,0 +1,27 @@
+{
+  "product": "CatalogOps Import Prep",
+  "status": "READY",
+  "input": {
+    "name": "sample-input.xlsx",
+    "headers": [
+      "Supplier SKU",
+      "Item",
+      "Options",
+      "Unit Price"
+    ],
+    "rows": 3,
+    "sha256": "1bbfe620be6bf75846501ec0f885e4172992bc829bcd001a04fad1ef569ed6b0",
+    "sheet": "Products"
+  },
+  "files": {
+    "result.json": "20a4a6df32c41724aa67b67d6304a0c852467986547d16c6b81be85b6cd03c8a",
+    "report.html": "8fa51dbfb1696729c49862ce1c69dc1f8ef9ec4ebf802bb1ae63c2b99bf800ec",
+    "rules.json": "d35ffaa54a24dac8c47a338910f7338e7d6b5fe19b864ba0b18f4ccc8b1c8cbe",
+    "prepared.csv": "611302671e701cab1b55f8b9927cf4d5b97d9a797f00bb0932cf5d38e88e22b1",
+    "changes.csv": "13808d2371ca7b9cd54621b8a6e2c703db4c94e035d36c687cbd8bfcf0caa9d5",
+    "mapping.csv": "fd95e059193dd4681805bfa95d0f6f33551ab5f2e99a0a830ca4950e3e6bd2db",
+    "review-needed.csv": "633dcf6164437018df9a6f7ad65ba8312a44d34430fca2b6e886d42ad5b01bc0",
+    "workbook.xlsx": "7f09975700ec524c593010b5f0125246bcec02f6f5c54589676d7941ff9dd82a",
+    "README.txt": "88d12646524333f766b695139fbcfbc1b0a518c5731b09de23f48c16c2b0c21c"
+  }
+}

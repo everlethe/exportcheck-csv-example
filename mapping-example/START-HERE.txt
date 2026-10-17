@@ -1,0 +1,39 @@
+CatalogOps Import Prep - free worked example
+
+SYNTHETIC DATA. This is not a customer order, testimonial or sales result.
+The source worksheet contains three invented products. The delivery files are
+unchanged output from our delivery tool, checked against every source cell.
+
+1. Open sample-input.xlsx to inspect the original Products worksheet.
+2. Open delivery/workbook.xlsx. Prepared contains all three mapped records.
+   Original retains every source value. Changes contains seven changes.
+   Mapping lists all five output fields. Review Needed has no exceptions.
+3. Open delivery/report.html for the readable quality-check summary.
+   delivery/prepared.csv contains the same three records. delivery/rules.json
+   records the exact mapping and delimiter rules used for this example.
+
+Rules: Supplier SKU -> SKU and Unit Price -> Price are exact copies.
+Item -> Product trims outer spaces. Options is split on one literal | into
+Color and Size, trimming the two results. No other transformations are made.
+Seven changed values: one product-name trim and six split outputs.
+
+Expected first row: 0007, Linen shirt, Blue, M, 0012.50.
+The workbook stores identifiers and price strings as text. When importing
+CSV, select text columns to preserve leading zeroes and decimal formatting.
+No facts or missing values are invented; no products are removed or merged.
+READY applies to these declared rules, not a guarantee that a store will
+accept the file. Review the output before importing into your live system.
+
+Service: one non-personal, non-confidential UTF-8 CSV or XLSX worksheet,
+up to 100 rows, 20 source/output columns and 20 MiB, with your supplied target
+template. Values-only input. Exact column copying and up to three explicit
+trim/split rules. AI-assisted processing requires permission.
+$59 base price; 3-day delivery after complete requirements; one revision
+within the original scope. Marketplace fees and taxes may apply.
+Keep orders, messages, files and payments on Upwork.
+
+Offer:
+https://www.upwork.com/services/product/admin-customer-support-product-data-mapped-to-your-import-template-with-a-change-log-2094923219914975740
+
+You may inspect and reuse these invented sample data for evaluation.
+The paid offer is a file-preparation service; this ZIP contains no application.

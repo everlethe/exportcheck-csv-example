@@ -1,0 +1,185 @@
+{
+  "product": "CatalogOps Import Prep",
+  "version": 1,
+  "status": "READY",
+  "input": {
+    "name": "sample-input.xlsx",
+    "headers": [
+      "Supplier SKU",
+      "Item",
+      "Options",
+      "Unit Price"
+    ],
+    "rows": 3,
+    "sha256": "1bbfe620be6bf75846501ec0f885e4172992bc829bcd001a04fad1ef569ed6b0",
+    "sheet": "Products"
+  },
+  "plan": {
+    "version": 1,
+    "key": "Supplier SKU",
+    "protected_sources": [
+      "Unit Price"
+    ],
+    "columns": [
+      {
+        "name": "SKU",
+        "source": "Supplier SKU",
+        "required": true
+      },
+      {
+        "name": "Product",
+        "source": "Item",
+        "op": "trim",
+        "required": true
+      },
+      {
+        "name": "Color",
+        "source": "Options",
+        "op": "split",
+        "separator": "|",
+        "parts": 2,
+        "index": 0,
+        "trim": true,
+        "required": true
+      },
+      {
+        "name": "Size",
+        "source": "Options",
+        "op": "split",
+        "separator": "|",
+        "parts": 2,
+        "index": 1,
+        "trim": true,
+        "required": true
+      },
+      {
+        "name": "Price",
+        "source": "Unit Price",
+        "required": true,
+        "type": "decimal",
+        "min": "0"
+      }
+    ]
+  },
+  "headers": [
+    "SKU",
+    "Product",
+    "Color",
+    "Size",
+    "Price"
+  ],
+  "rows": [
+    {
+      "SKU": "0007",
+      "Product": "Linen shirt",
+      "Color": "Blue",
+      "Size": "M",
+      "Price": "0012.50"
+    },
+    {
+      "SKU": "0008",
+      "Product": "Canvas jacket",
+      "Color": "Olive",
+      "Size": "L",
+      "Price": "29.00"
+    },
+    {
+      "SKU": "0009",
+      "Product": "Cotton scarf",
+      "Color": "Sand",
+      "Size": "One size",
+      "Price": "8.00"
+    }
+  ],
+  "source_rows": [
+    {
+      "Supplier SKU": "0007",
+      "Item": "  Linen shirt  ",
+      "Options": "Blue | M",
+      "Unit Price": "0012.50"
+    },
+    {
+      "Supplier SKU": "0008",
+      "Item": "Canvas jacket",
+      "Options": "Olive | L",
+      "Unit Price": "29.00"
+    },
+    {
+      "Supplier SKU": "0009",
+      "Item": "Cotton scarf",
+      "Options": "Sand | One size",
+      "Unit Price": "8.00"
+    }
+  ],
+  "issues": [],
+  "changes": [
+    {
+      "record": 1,
+      "source_column": "Item",
+      "target_column": "Product",
+      "before": "  Linen shirt  ",
+      "after": "Linen shirt",
+      "operation": "trim"
+    },
+    {
+      "record": 1,
+      "source_column": "Options",
+      "target_column": "Color",
+      "before": "Blue | M",
+      "after": "Blue",
+      "operation": "split"
+    },
+    {
+      "record": 1,
+      "source_column": "Options",
+      "target_column": "Size",
+      "before": "Blue | M",
+      "after": "M",
+      "operation": "split"
+    },
+    {
+      "record": 2,
+      "source_column": "Options",
+      "target_column": "Color",
+      "before": "Olive | L",
+      "after": "Olive",
+      "operation": "split"
+    },
+    {
+      "record": 2,
+      "source_column": "Options",
+      "target_column": "Size",
+      "before": "Olive | L",
+      "after": "L",
+      "operation": "split"
+    },
+    {
+      "record": 3,
+      "source_column": "Options",
+      "target_column": "Color",
+      "before": "Sand | One size",
+      "after": "Sand",
+      "operation": "split"
+    },
+    {
+      "record": 3,
+      "source_column": "Options",
+      "target_column": "Size",
+      "before": "Sand | One size",
+      "after": "One size",
+      "operation": "split"
+    }
+  ],
+  "summary": {
+    "records": 3,
+    "ready_records": 3,
+    "review_records": 0,
+    "changes": 7
+  },
+  "notice": "All records retained. READY covers the declared rules only; destination acceptance is not guaranteed.",
+  "order": {
+    "order_id": "SAMPLE-import-prep",
+    "revision": 0,
+    "synthetic": true
+  }
+}

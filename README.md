@@ -4,6 +4,15 @@ Two CSV exports can look different because rows moved, numbers were rounded, or 
 
 **Included:** before/after CSV files, a comparison profile, and the resulting HTML/JSON/CSV reports. All order and product values are invented. No customer data is included.
 
+## Choose a worked example
+
+| Your task | Example |
+| --- | --- |
+| Check whether two exports contain the same records and values | [Keyed CSV comparison](#try-the-example), below |
+| Map supplier columns into a product template while preserving SKU and price text | [Supplier worksheet → product CSV](mapping-example/README.md): 3 invented products, 5 output columns and 7 recorded transformations |
+
+Both examples include the input, explicit rules and expected output. You can inspect them without buying or installing an application.
+
 ## Try the example
 
 1. Open [`fixtures/before.csv`](fixtures/before.csv) and [`fixtures/after.csv`](fixtures/after.csv).

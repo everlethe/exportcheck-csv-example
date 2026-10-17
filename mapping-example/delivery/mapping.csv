@@ -1,0 +1,6 @@
+﻿name,source,op,required,type,index,label
+SKU,Supplier SKU,,True,,,
+Product,Item,trim,True,,,
+Color,Options,split,True,,0,
+Size,Options,split,True,,1,
+Price,Unit Price,,True,decimal,,
