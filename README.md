@@ -6,11 +6,11 @@ Two CSV exports can look different because rows moved, numbers were rounded, or 
 
 ## Choose a worked example
 
-| Your task | Free worked example | Paid option for your own file |
-| --- | --- | --- |
-| Check whether two exports contain the same records and values | [Keyed CSV comparison](#try-the-example), below | Run the checks yourself with [ExportCheck CLI — $19](https://inu-gumi.pro/exportcheck/site/) or [ExportCheck Desk — $39](https://inu-gumi.pro/exportcheck/site/exportcheck-desk) |
-| Map supplier columns into a product template while preserving SKU and price text | [Supplier worksheet → product CSV](mapping-example/README.md): 3 invented products, 5 output columns and 7 recorded transformations | Order [CatalogOps Import Prep — $59 / 3 days](https://www.upwork.com/services/product/admin-customer-support-product-data-mapped-to-your-import-template-with-a-change-log-2094923219914975740), or map files yourself with [CatalogBridge — $49](https://inu-gumi.pro/exportcheck/site/catalogbridge) |
-| Extract a text-PDF table and trace each value back to its source | [Text PDF → spreadsheet](pdf-table-example/README.md): 2 pages, 4 invented products and page/table/row references | Order [SourceToSheet — $49 / 3 days](https://www.upwork.com/services/product/admin-customer-support-text-pdf-tables-converted-to-excel-with-source-page-references-2094924043265415041) |
+- **Compare two CSV exports.** Follow the free [keyed CSV comparison](#try-the-example) below to distinguish moved rows, accepted rounding and actual changes. For your own files, run the checks with [ExportCheck CLI — $19](https://inu-gumi.pro/exportcheck/site/) or [ExportCheck Desk — $39](https://inu-gumi.pro/exportcheck/site/exportcheck-desk).
+
+- **Map supplier columns into a product template.** The free [supplier worksheet → product CSV example](mapping-example/README.md) preserves SKU and price text across 3 invented products, 5 output columns and 7 recorded transformations. Order [CatalogOps Import Prep — $59 / 3 days](https://www.upwork.com/services/product/admin-customer-support-product-data-mapped-to-your-import-template-with-a-change-log-2094923219914975740), or map files yourself with [CatalogBridge — $49](https://inu-gumi.pro/exportcheck/site/catalogbridge).
+
+- **Extract a text-PDF table with source references.** The free [text PDF → spreadsheet example](pdf-table-example/README.md) contains 2 pages, 4 invented products and page/table/row references. Order [SourceToSheet — $49 / 3 days](https://www.upwork.com/services/product/admin-customer-support-text-pdf-tables-converted-to-excel-with-source-page-references-2094924043265415041).
 
 Each example includes the input, explicit rules and expected output. You can inspect them without buying or installing an application.
 
