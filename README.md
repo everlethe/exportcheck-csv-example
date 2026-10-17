@@ -1,8 +1,8 @@
-# Keyed CSV comparison: a worked acceptance-check example
+# Worked examples: CSV comparison, column mapping and PDF tables
 
 Two CSV exports can look different because rows moved, numbers were rounded, or records actually changed. This small **synthetic dataset** shows how to distinguish those cases using an explicit record key and acceptance rules.
 
-**Included:** before/after CSV files, a comparison profile, and the resulting HTML/JSON/CSV reports. All order and product values are invented. No customer data is included.
+**Included:** before/after CSV files and comparison reports, a supplier worksheet with mapped output, and a text PDF with an extracted table and source references. All order and product values are invented. No customer data is included.
 
 ## Choose a worked example
 
@@ -10,8 +10,9 @@ Two CSV exports can look different because rows moved, numbers were rounded, or 
 | --- | --- |
 | Check whether two exports contain the same records and values | [Keyed CSV comparison](#try-the-example), below |
 | Map supplier columns into a product template while preserving SKU and price text | [Supplier worksheet → product CSV](mapping-example/README.md): 3 invented products, 5 output columns and 7 recorded transformations |
+| Extract a text-PDF table and trace each value back to its source | [Text PDF → spreadsheet](pdf-table-example/README.md): 2 pages, 4 invented products and page/table/row references |
 
-Both examples include the input, explicit rules and expected output. You can inspect them without buying or installing an application.
+Each example includes the input, explicit rules and expected output. You can inspect them without buying or installing an application.
 
 ## Try the example
 

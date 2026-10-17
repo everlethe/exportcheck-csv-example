@@ -1,0 +1,4 @@
+﻿name,source,op,required,type,index,label
+SKU,,,True,,0,
+Product,,,True,,1,
+Price,,,True,decimal,2,

@@ -1,0 +1,19 @@
+{
+  "product": "SourceToSheet",
+  "status": "READY",
+  "input": {
+    "name": "sample-input.pdf",
+    "sha256": "bb1201ecb29c5b436053cd943f65fc8398af7836d706f2702b44dd0859241ede",
+    "pages": 2
+  },
+  "files": {
+    "result.json": "1ed8ee77a45521e31b4d9a185900e2c40df8f04ef1f2c26df70406c490031224",
+    "report.html": "505479511c0f913e054c8748dc32e35517d571e53d0b4de3e2d63d784d260039",
+    "rules.json": "d907d3397bddd1dc2a6c99c86e587d1a174ac4e75622102bb3ec88d47ef8f889",
+    "prepared.csv": "a7710080341e1ed042c9abf0cfad5dfec38d908d7fc3c8729fed6d3961e1535c",
+    "mapping.csv": "663be5a4813afdea658fad4b6ec44b8f87b43347afe929bba2f1d182e6d84d80",
+    "review-needed.csv": "633dcf6164437018df9a6f7ad65ba8312a44d34430fca2b6e886d42ad5b01bc0",
+    "workbook.xlsx": "e0bd0ccdbc7dcc71f84729227ee9da3f003d1a88a2509299fd318ffa2b2f24a2",
+    "README.txt": "47abf0d3856788b15d2fa337a2c0f04fab3727447a6f0035e3dd2aa5d7f4ffc5"
+  }
+}

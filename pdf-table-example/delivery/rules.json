@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "mode": "table",
+  "strategy": "lines",
+  "key": "SKU",
+  "header": [
+    "SKU",
+    "Product",
+    "Price"
+  ],
+  "columns": [
+    {
+      "name": "SKU",
+      "index": 0,
+      "required": true
+    },
+    {
+      "name": "Product",
+      "index": 1,
+      "required": true
+    },
+    {
+      "name": "Price",
+      "index": 2,
+      "required": true,
+      "type": "decimal",
+      "min": "0"
+    }
+  ]
+}

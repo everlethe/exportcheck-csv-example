@@ -1,0 +1,33 @@
+SourceToSheet - free worked example
+
+SYNTHETIC DATA. This is not a customer order, testimonial or sales result.
+The two-page PDF contains four invented products. The delivery files are the
+unchanged output of our delivery tool, checked against both source pages.
+
+1. Open sample-input.pdf to inspect the original two tables.
+2. Open delivery/workbook.xlsx. Prepared contains all four records; Source
+   Evidence links each field to its page, table and row. Page Coverage lists
+   both pages. Review Needed is empty because this example has no exceptions.
+3. Open delivery/report.html for the readable quality-check summary.
+   delivery/prepared.csv is the same four-record table for explicit import.
+
+Expected example: SKU 0007, Linen shirt, price 0012.50, page 1, table 1 row 2.
+SKU and price values in the workbook are stored as text. When importing CSV,
+set these columns to text to avoid losing leading zeroes or decimal places.
+No product facts, prices or missing values were invented during conversion.
+
+This example shows a simple ruled, text-based table. It does not demonstrate
+OCR, scans, handwriting or support for every possible PDF layout. Ask us on
+Upwork before ordering if the file's layout is uncertain.
+
+Service: one non-personal, non-confidential text PDF, one consistent layout,
+up to 10 pages, 100 records, 8 requested fields and 20 MiB. AI-assisted
+planning and review require permission. $49 base price; 3-day delivery after
+complete requirements; one revision within the original scope. Marketplace
+fees and taxes may apply. Keep orders, messages, files and payments on Upwork.
+
+Offer:
+https://www.upwork.com/services/product/admin-customer-support-text-pdf-tables-converted-to-excel-with-source-page-references-2094924043265415041
+
+You may inspect and reuse these invented sample data for evaluation.
+The paid offer is a file-conversion service; this ZIP contains no application.

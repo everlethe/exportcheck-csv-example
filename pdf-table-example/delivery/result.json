@@ -1,0 +1,258 @@
+{
+  "product": "SourceToSheet",
+  "version": 1,
+  "status": "READY",
+  "input": {
+    "name": "sample-input.pdf",
+    "sha256": "bb1201ecb29c5b436053cd943f65fc8398af7836d706f2702b44dd0859241ede",
+    "pages": 2
+  },
+  "plan": {
+    "version": 1,
+    "mode": "table",
+    "strategy": "lines",
+    "key": "SKU",
+    "header": [
+      "SKU",
+      "Product",
+      "Price"
+    ],
+    "columns": [
+      {
+        "name": "SKU",
+        "index": 0,
+        "required": true
+      },
+      {
+        "name": "Product",
+        "index": 1,
+        "required": true
+      },
+      {
+        "name": "Price",
+        "index": 2,
+        "required": true,
+        "type": "decimal",
+        "min": "0"
+      }
+    ]
+  },
+  "headers": [
+    "SKU",
+    "Product",
+    "Price",
+    "Source Page",
+    "Source Location"
+  ],
+  "rows": [
+    {
+      "SKU": "0007",
+      "Product": "Linen shirt",
+      "Price": "0012.50",
+      "Source Page": "1",
+      "Source Location": "table 1, row 2"
+    },
+    {
+      "SKU": "0008",
+      "Product": "Canvas jacket",
+      "Price": "29.00",
+      "Source Page": "1",
+      "Source Location": "table 1, row 3"
+    },
+    {
+      "SKU": "0009",
+      "Product": "Cotton scarf",
+      "Price": "8.00",
+      "Source Page": "2",
+      "Source Location": "table 1, row 2"
+    },
+    {
+      "SKU": "0010",
+      "Product": "Wool cap",
+      "Price": "15.00",
+      "Source Page": "2",
+      "Source Location": "table 1, row 3"
+    }
+  ],
+  "issues": [],
+  "changes": [],
+  "provenance": [
+    {
+      "record": 1,
+      "page": 1,
+      "location": "table 1, row 2",
+      "fields": {
+        "SKU": {
+          "text": "0007",
+          "bbox": [
+            48.0,
+            173.88980000000004,
+            138.0,
+            207.88980000000004
+          ],
+          "column_index": 0
+        },
+        "Product": {
+          "text": "Linen shirt",
+          "bbox": [
+            138.0,
+            173.88980000000004,
+            418.0,
+            207.88980000000004
+          ],
+          "column_index": 1
+        },
+        "Price": {
+          "text": "0012.50",
+          "bbox": [
+            418.0,
+            173.88980000000004,
+            543.0,
+            207.88980000000004
+          ],
+          "column_index": 2
+        }
+      }
+    },
+    {
+      "record": 2,
+      "page": 1,
+      "location": "table 1, row 3",
+      "fields": {
+        "SKU": {
+          "text": "0008",
+          "bbox": [
+            48.0,
+            207.88980000000004,
+            138.0,
+            241.88980000000004
+          ],
+          "column_index": 0
+        },
+        "Product": {
+          "text": "Canvas jacket",
+          "bbox": [
+            138.0,
+            207.88980000000004,
+            418.0,
+            241.88980000000004
+          ],
+          "column_index": 1
+        },
+        "Price": {
+          "text": "29.00",
+          "bbox": [
+            418.0,
+            207.88980000000004,
+            543.0,
+            241.88980000000004
+          ],
+          "column_index": 2
+        }
+      }
+    },
+    {
+      "record": 3,
+      "page": 2,
+      "location": "table 1, row 2",
+      "fields": {
+        "SKU": {
+          "text": "0009",
+          "bbox": [
+            48.0,
+            173.88980000000004,
+            138.0,
+            207.88980000000004
+          ],
+          "column_index": 0
+        },
+        "Product": {
+          "text": "Cotton scarf",
+          "bbox": [
+            138.0,
+            173.88980000000004,
+            418.0,
+            207.88980000000004
+          ],
+          "column_index": 1
+        },
+        "Price": {
+          "text": "8.00",
+          "bbox": [
+            418.0,
+            173.88980000000004,
+            543.0,
+            207.88980000000004
+          ],
+          "column_index": 2
+        }
+      }
+    },
+    {
+      "record": 4,
+      "page": 2,
+      "location": "table 1, row 3",
+      "fields": {
+        "SKU": {
+          "text": "0010",
+          "bbox": [
+            48.0,
+            207.88980000000004,
+            138.0,
+            241.88980000000004
+          ],
+          "column_index": 0
+        },
+        "Product": {
+          "text": "Wool cap",
+          "bbox": [
+            138.0,
+            207.88980000000004,
+            418.0,
+            241.88980000000004
+          ],
+          "column_index": 1
+        },
+        "Price": {
+          "text": "15.00",
+          "bbox": [
+            418.0,
+            207.88980000000004,
+            543.0,
+            241.88980000000004
+          ],
+          "column_index": 2
+        }
+      }
+    }
+  ],
+  "page_coverage": [
+    {
+      "page": 1,
+      "text_sha256": "41180a67875bca58be957cae97a382668d5d6205a4f67afeaae63f06a11fe9fc",
+      "text_characters": 186,
+      "records": 2,
+      "ignored_lines": [],
+      "tables_found": 1
+    },
+    {
+      "page": 2,
+      "text_sha256": "74c594077c4f1e3b3a5ab8a6e9ff001b63ac96c3832b8337b3ec44f726a40049",
+      "text_characters": 179,
+      "records": 2,
+      "ignored_lines": [],
+      "tables_found": 1
+    }
+  ],
+  "summary": {
+    "records": 4,
+    "pages": 2,
+    "review_items": 0
+  },
+  "notice": "Transcription of supplied text, not new product claims or valuations. Review original pages for layout/encoding ambiguities.",
+  "order": {
+    "order_id": "SAMPLE-source-to-sheet",
+    "revision": 0,
+    "synthetic": true
+  }
+}
